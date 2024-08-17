@@ -1,0 +1,85 @@
+/* Estilo global para el cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Estilo para el contenedor principal */
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    padding-top: 140px; /* Ajuste para que el contenido no se oculte detrás del header fijo */
+}
+
+/* Estilo para los encabezados */
+h1 {
+    color: #a51010;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #b30000;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Estilo para los párrafos */
+p {
+    margin-bottom: 10px;
+}
+
+/* Estilo para los elementos destacados */
+.highlight {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-left: 3px solid #b30000;
+}
+
+/* Estilo para las imágenes del carrusel */
+.carousel-img {
+    max-width: 100%;
+    height: auto; 
+    max-height: 400px; 
+    object-fit: cover; 
+}
+
+/* Estilo para el header */
+.header {
+    background-color: #070606; /* Color inicial del header */
+    color: white;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.header.scrolled {
+    background-color: #7D7C7C; /* Color del header al hacer scroll */
+}
+
+/* Estilo para el footer */
+.footer {
+    background-color:#8B1111; /* Color de fondo del footer */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Ajustes de responsividad */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding-top: 160px;
+    }
+
+    .header img {
+        height: 80px; /* Ajuste de tamaño de imagen para pantallas pequeñas */
+    }
+}
